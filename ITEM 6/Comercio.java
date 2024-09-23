@@ -14,7 +14,7 @@ public class Comercio
 
     public Comercio(String p_nombre)
     {
-        setNombre(p_nombre);
+        this.setNombre(p_nombre);
         this.setEmpleados(new HashMap<Long, Empleado>());
     }
     public Comercio(String p_nombre, HashMap  <Long, Empleado> p_empleados)
