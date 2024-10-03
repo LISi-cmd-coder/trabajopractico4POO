@@ -23,13 +23,14 @@ public class Banco
         this.setLocalidad(p_localidad);
         this.setNroSucursal(p_nrosucursal);
         this.setEmpleado(p_empleado);
+        this.setEmpleados(new ArrayList<Empleado>);
     }
     public Banco (String p_nombre,Localidad p_Localidad,int p_nrosucursal, ArrayList <Empleado> p_Empleado )
     {
         this.setName(p_nombre);
         this.setLocalidad(p_Localidad);
         this.setNroSucursal(p_nrosucursal);
-        this.setEmpleado(p_Empleado);
+        this.setEmpleados(p_Empleado);
     }
 
     public Banco(String p_nombre, Localidad p_localidad, int p_nroSucursal, ArrayList<Empleado> p_empleados, ArrayList <CuentaBancaria>  p_cuentas)
@@ -37,7 +38,7 @@ public class Banco
         this.setName(p_nombre);
         this.setLocalidad(p_localidad);
         this.setNroSucursal(p_nroSucursal);
-        this.setEmpleado(p_empleados);
+        this.setEmpleados(p_empleados);
         this.setCuentas(p_cuentas);
     }
 
@@ -50,7 +51,7 @@ public class Banco
     {
         this.localidad = p_Localidad; 
     }
-    private void setEmpleado (ArrayList <Empleado>  p_Empleado)
+    private void setEmpleados (ArrayList <Empleado>  p_Empleado)
     {
         this.empleados= p_Empleado;
     }
