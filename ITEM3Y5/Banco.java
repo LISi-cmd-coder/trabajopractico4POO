@@ -186,7 +186,7 @@ public class Banco
     public HashSet<String> ListaTitulares()
     {
          HashSet<String> nombresTitulares = new HashSet<>();
-         for(CuentaBancaria cuentas : cuentasBancarias )
+         for(CuentaBancaria cuentas : this.getCuentas() )
          {
             String nombreTitular = cuentas.getTitular();
             nombresTitulares.add(nombreTitular);
