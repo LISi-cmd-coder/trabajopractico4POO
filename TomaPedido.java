@@ -8,7 +8,7 @@ import java.util.Scanner;
  * @author LisandroValenzuela   
  * @version 11032002
  */
-public class TomaPedido
+public class tomaPedido
 {
    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
